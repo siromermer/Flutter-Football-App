@@ -233,20 +233,7 @@ class MainPageState extends State<MainPage> {
     });
 
     }
-  void check_team(List<dynamic> tlist , String tname){
-    print(tlist);
-    print(tname);
-  
-    print("condition ");
-    if (tlist.contains(tname))
-      {
-        print("team is in the lig");
-      }
-    else
-      { 
-        print("nooo team is not in the league");
-      }
-    }
+ 
   
  
 
@@ -278,7 +265,6 @@ class MainPageState extends State<MainPage> {
                           onPressed: () {       
                             leagueText = "Bundesliga";
                             send_request();
-                            check_team(teamList,teamText); 
                            },
                         ),
                       ),
@@ -293,7 +279,6 @@ class MainPageState extends State<MainPage> {
                           onPressed: () {
                             leagueText = "Ligue 1";
                             send_request();
-                            check_team(teamList,teamText);
                            },
                         ),
                       ),
@@ -309,7 +294,6 @@ class MainPageState extends State<MainPage> {
                             
                             leagueText = "Premier League";
                             send_request();
-                            check_team(teamList,teamText);
                     
                           },
                         ),
@@ -335,7 +319,6 @@ class MainPageState extends State<MainPage> {
                               
                               leagueText = "Serie A";
                               send_request();
-                              check_team(teamList,teamText);
                             },
                           ),
                         ),
@@ -351,7 +334,6 @@ class MainPageState extends State<MainPage> {
                           
                               leagueText = "Süper Lig";
                               send_request();
-                              check_team(teamList,teamText);
                             },
                           ),
                         ),
